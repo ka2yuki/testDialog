@@ -1,0 +1,13 @@
+<div>
+    <p>
+        Hi {{data.name}}
+    </p>
+    <mat-input-container floatPlaceholder="auto">
+        <input matInput
+               required
+               [(ngModel)]="data.say"
+               placeholder="say">
+    </mat-input-container>
+    <button mat-button (click)="ok()">OKー！</button>
+    <button mat-button (click)="cansel()">Cansel</button>
+</div>
